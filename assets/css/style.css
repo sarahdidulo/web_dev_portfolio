@@ -1,5 +1,6 @@
 /*try mag background fix in about me to put the nav bar*/
 /*"container" class includes margin. "container-fluid hindi"*/
+/*add media queries*/
 
 *{
 	margin: 0;
@@ -7,20 +8,10 @@
 	box-sizing: border-box;
 }
 
-.navbar{
-	position: fixed;
-	width: 100vw;
-	left: 0;
-	/*background-color: black;*/
-	background-color: rgba(192,192,192, .5);
-	height: 5%;
-	/*color: black;*/
-	/*position: absolute;*/
+.col-lg-12, .col-lg-6{
+	padding:0;
 }
 
-.navbar-brand{
-	color: pink;
-}
 
 
 
@@ -36,16 +27,39 @@
 	/*width: 100vw;*/
 }
 
-.navigate{
+.navbar{
+	position: fixed;
+	width: 100vw;
+	left: 0;
+	/*background-color: black;*/
+	background-color: rgba(192,192,192, .5);
+	height: 6%;
+	/*color: black;*/
+	/*position: absolute;*/
+}
+
+.navbar-brand{
+	color: white;
+}
+
+.edit_nav{
+	color: white;
+	background-color: black;
+}
+
+.sd_white{
+	width: 39px;
+	height: 30px;
+}
+
+/*.navigate{
 	background-color: blue;
 	font-family: 'Quicksand', sans-serif;
 	left: 78%;
 	border: 1px solid white;
-/*	position: absolute;*/
 	z-index: 10;
 	position: fixed;
 	visibility: hidden;
-	/*overflow:hidden;*/
 }
 
 #hov-button {
@@ -56,14 +70,14 @@
 	background-color: rgba(88,88,88, 0.1);
 	border-color: rgba(88,88,88, 0.1);
 }
-
+*/
 /*#nav-hov {
 	position: relative;
 	padding: 10px;
 	background-color: red;
 }*/
 
-#hov-button:hover ~ .navigate {
+/*#hov-button:hover ~ .navigate {
 	visibility: visible;
 }
 
@@ -83,7 +97,7 @@
 .navigate > a:hover{
 	background-color: aquamarine;
 	color: black;
-}
+}*/
 
 
 .row:after{
@@ -116,7 +130,9 @@
 
 .header{
 	min-height: 100vh;
+	width: 100vw;
 	background-color: white;
+	margin-left: 0;
 	position: relative;
 	/*float:left;*/
 	/*margin-top: 50px;*/
@@ -132,7 +148,7 @@
 	height: 200px;
 	width: 225px;	
 	animation-duration: 3s;
-	animation-delay: 1s;
+	/*animation-delay: 1s;*/
 	float:left;
 }
 
@@ -141,8 +157,8 @@
 	margin-right: 10px;				
 	height: 200px;
 	width: 225px;	
-	animation-duration: 3s;
-	animation-delay: 1s;
+	animation-duration: 2s;
+	/*animation-delay: 1s;*/
 	float: left;
 }
 
@@ -150,14 +166,6 @@
 	min-height: 100vh;
 }*/
 
-.box_about{
-	text-align: justify;
-	text-indent: 30px;
-	line-height: 30px;
-	margin-top: 200px;
-	margin-left: 50px;
-	margin-right: 50px;
-}
 
 .pic{
 	width: 200px;
@@ -171,18 +179,26 @@
 
 }
 
-.about_me_page{
+/*.about_me_page{
 	min-height: 100vh;
-}
+	border-bottom: 1px solid;
+	border-color: rgba(88,88,88, 0.7);
+}*/
+
+
 
 .left_about_me{
-/*	width: 100%;*/
+	width: 100%;
 	position: relative;
 	float:left;
+	min-height: 100vh;
+	/*border: 1px solid white;*/
 }
 
+
+
 .pic_class{
-	top: 55%;
+	top: 40%;
 	left: 50%;
 	position: absolute;
 	transform: translate(-50%, -50%);
@@ -211,19 +227,47 @@
 	/*width: 100%;*/
 	background-color: rgba(88,88,88, 0.4);
 	/*border-radius: 30%;*/
-	color: lightgray;
+	width: 100%;
+	color: white;
 	min-height: 100vh;
-	border: 1px solid pink;
+	float: left;
+	/*border: 1px solid white;*/
+}
+
+.box_about{
+	text-align: justify;
+	text-indent: 30px;
+	line-height: 30px;
+	margin-top: 200px;
+	padding-left: 50px;
+	padding-right: 50px;
+	width: 100%;
 	float: left;
 }
 
-/*.navigate > ul > li > a{
+.logo2_box{
+	margin-top: 30px;
+	width: 100%;
+	padding-left: 30px;
+}
+.logo2{
+	height: 85px;
+	width: 83px;
 	float: left;
-	display: block;
+	margin-left: 20px;
+}
 
-}*/
+.logo3{
+	height: 85px;
+	width: 80px;
+	margin-left: 20px;
+	margin-top: 50px;
+	float:left;
+}
 
 
+
+/*projects*/
 .project_rows{
 	min-height: 100vh;
 }
@@ -262,7 +306,7 @@
 	color: white;
 	line-height: 30px;
 	/*float: left;*/
-	border: 2px solid red;
+	/*border: 2px solid red;*/
 	padding: 0;
 }
 
@@ -279,5 +323,33 @@
 
 .contact{
 	min-height: 100vh;
-	background-color: aquamarine;
+	background-color: rgba(20,20,20, 0.7);
+	/*background-color: black;*/
+}
+
+.contact_us{
+	top: 55%;
+	left: 50%;
+	height: 350px;
+	background-color: #53e3d4;
+	padding: 20px;
+	transform: translate(-50%, -50%);
+	border-radius: 10px;
+	border: 1px solid black;
+}
+
+
+
+.footer_edit{
+	width: 100%;
+	margin:0;
+	padding-top:15px;
+	padding-bottom: 15px;
+	padding-left: 0;
+	padding-right: 0;
+	color: white;
+}
+
+.bg-info{
+	background-color: rgba(20,20,20, 0.7);
 }

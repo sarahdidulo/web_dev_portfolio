@@ -30,15 +30,20 @@
 
 	<link href="https://fonts.googleapis.com/css?family=Kanit:500" rel="stylesheet">
 
+	<!-- fav-icon -->
+
+	<link rel="icon" type="image/gif/png" href="assets/images/SD_black.png">
+
 	<title>Web Dev Portfolio</title>
 </head>
 
 <body>
 
 <div class="container-fluid">	
-	<nav class="navbar sticky-top navbar-expand-lg navbar-light">
-			<a class="navbar-brand" href="#">
-				<i class="far fa-hand-peace"></i> Batch 19
+	<nav class="navbar sticky-top navbar-expand-lg navbar-dark edit_nav">
+			<a class="navbar-brand" href="#home">
+				<img class="sd_white" src="assets/images/SD_white.png">
+				<!-- <i class="far fa-hand-peace"></i> Batch 19 -->
 			</a>
 
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-nav">
@@ -59,9 +64,9 @@
 						<a class="nav-link" href="#projects">Projects</a>
 					</li>
 
-					<li class="nav-item">
+<!-- 					<li class="nav-item">
 						<a class="nav-link" href="#">FAQs</a>
-					</li>
+					</li> -->
 
 
 				</ul>
@@ -85,45 +90,57 @@
 		</div> end of nav row -->
 	
 		<div class="row">
-
-			<div id="home" class="header col-lg-12">
-				<div class="box">	
-					<img class="s_logo animated slideInUp" src="assets/images/S.png" alt="no image">
-					<img class="d_logo animated slideInDown" src="assets/images/D.png" alt="no image">
-					<div class="box_portfolio animated fadeIn">
-						<p>Website Portfolio</p>
+			<div class="col-lg-12">
+				<div id="home" class="header">
+				
+					<div class="box">	
+						<img class="s_logo animated slideInUp" src="assets/images/S.png" alt="no image">
+						<img class="d_logo animated slideInDown" src="assets/images/D.png" alt="no image">
+						<div class="box_portfolio animated fadeIn">
+							<p>Website Portfolio</p>
+						</div>
 					</div>
+				</div>	<!-- end of header -->
 
-				</div>
-			</div> <!-- end of header -->
+
+			</div> 
 		</div> <!-- end of row -->
 
 
 		<div class="row">
-			<div id ="about" class="about_me_page">
-			<div class="left_about_me col-lg-6">
-				<div class="pic_class">
-					<img class="pic">
-				</div>
-				<div class="details">
-					<p>Sarah Mae N. Didulo <span class="detail_1">   |    </span>Full Stack Web Developer</p>
+			
+			<!-- <div id ="about" class="about_me_page"> -->
+
+			<div class="col-lg-6">	
+				<div id="about" class="left_about_me">
+					<div class="pic_class">
+						<img class="pic">
+					</div>
+					<div class="details">
+						<p>Sarah Mae N. Didulo <span class="detail_1">   |    </span>Full Stack Web Developer</p>
+					</div>
 				</div>
 			</div>
 
-			<div class="right_about_me col-lg-6">
+			<div class="col-lg-6">
+			<div class="right_about_me">
 				<div class="box_about">
 					<p>
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+					Sarah Didulo is a graduate of De La Salle University - Manila with a degree in Marketing Management. She had earned a certificate from Tuitt Bootcamp where she obtained skills as a website developer. Her skills are also in line with her interests such as art and design. 
 					</p>
-
+					<div class="logo2_box">
+					<img class="logo3" src="assets/images/ps.png" alt="no image">
+					<img class="logo2" src="assets/images/html.png" alt="no image">
+					<img class="logo3" src="assets/images/java.png" alt="no image">
+					<img class="logo2" src="assets/images/css.png" alt="no image">
+					<img class="logo3" src="assets/images/boot.png" alt="no image">
+					</div>
 				</div>
+			</div>	
 			</div>
-		</div>
+
+
+			<!-- </div> --> <!-- about me page -->
 
 		</div> <!-- end of 2nd row -->
 
@@ -175,13 +192,40 @@
 
 		<div class="row">
 			<div id="contact" class="contact col-lg-12">
+				<form class="contact_us col-lg-6" action="mailto:didulo.sarah@gmail.com" method="post" enctype="text/plain">
+					<div class="input-group">
+						<div class="input-group-prepend">
+							<span class="input-group-text">Email:</span>
+						</div>
+						<input type="email" class="form-control" placeholder="Input Email Here">
+					</div>	
 
+					<div class="form-group">
+						<label for="username">Username:</label>
+						<input id="username" type="text" class="form-control">
+					</div>
 
+					<div class="form-group">
+						<label for="text-area">Comments:</label>
+						<textarea id="text-area" class="form-control" rows="3" placeholder="Comments Section"></textarea>
+					</div>
 
-			
+					<input type="submit" value="Send">
+				</form>
 
 			</div> 
+
 		</div> <!-- end of row for contact -->
+
+		<div class="row">
+			
+				<footer class="footer bg-info footer_edit">
+					<div class="col-lg-12">
+					<p class="text-center mb-0">Sarah Didulo &copy 2018 | Tuitt Coding Bootcamp</p> <!-- p is padding -->
+					</div>
+				</footer>
+			
+		</div>
 
 
 
