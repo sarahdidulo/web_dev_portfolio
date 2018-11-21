@@ -138,7 +138,7 @@
 
 .header{
 	min-height: 100vh;
-	width: 100vw;
+	width: 100%;
 	background-color: white;
 	margin-left: 0;
 	position: relative;
@@ -188,13 +188,13 @@
 }
 
 #about_me_page{
-	min-height: 80vh;
+	min-height: 100vh;
 	/*border-bottom: 1px solid;*/
 	/*border-color: rgba(88,88,88, 0.7);*/
 	/*border: 1px solid white;*/
+
 	margin: 80px 30px 80px 30px;
 	background-color: rgba(88,88,88, 0.3);
-
 }
 
 
@@ -287,7 +287,7 @@
 #projects{
 	padding-left: 10%;
 	/*border: 1px solid white;*/
-	background-color: rgba(20,20,20, 0.7);
+	background-color: rgba(20,20,20, 0.8);
 }
 .recent_proj{
 	font-family: 'Kanit', sans-serif;
@@ -309,7 +309,7 @@
 	padding-bottom: 80px;
 	/*padding-right: 50px;*/
 	/*border: 1px solid white;*/
-	background-color: rgba(20,20,20, 0.7);
+	background-color: rgba(20,20,20, 0.8);
 }
 
 .project{
@@ -335,21 +335,59 @@
 
 }
 
-.contact{
-	min-height: 100vh;
+/*#contact{
+	min-height: 80vh;
 	background-color: rgba(20,20,20, 0.7);
-	/*background-color: black;*/
+}*/
+
+#left_col{
+	/*padding: 90px 50px 50px 50px;*/
+	background-color: rgba(20,20,20, 0.8);
+	/*border: 1px solid white;*/
+	min-height: 70vh;
+	/*width: 100%;*/
+}
+
+#left_col_header{
+	font-family: 'Kanit', sans-serif;
+	font-size: 30px;
+	color: turquoise;
 }
 
 .contact_us{
-	top: 55%;
-	left: 50%;
+	width: 600px;
 	height: 350px;
+	margin-left: 380px;
+	margin-top: 30px;
 	background-color: #53e3d4;
 	padding: 20px;
-	transform: translate(-50%, -50%);
 	border-radius: 10px;
 	border: 1px solid black;
+}
+
+hr{
+	background-color: turquoise;
+	width: 50%;
+	margin-left: 340px;
+	margin-top: 70px;
+}
+
+#right_col{
+	width: 100%;
+	/*border: 1px solid white;*/
+	background-color: rgba(20,20,20, 0.8);
+	min-height: 100vh;
+	padding: 60px 50px 10px 80px;
+	min-height: 100vh;	
+	color: white;
+}
+
+#right_col2{
+	background-color: rgba(20,20,20, 0.8);
+	padding-top: 60px;
+	min-height: 100vh;
+	min-height: 100vh;	
+	color: white;
 }
 
 
