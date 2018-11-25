@@ -1,0 +1,339 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/*.col-lg-12,
+.col-lg-6, .col-lg-4, .col-10-lg{
+	padding: 0;
+}
+*/
+
+.container-fluid{
+	background-color: #E0EEEE;
+	padding: 0;
+	margin: 0;
+}
+
+.main{
+	background-color: white;	
+}
+
+.carousel{
+	padding:0;
+	margin:0;
+}
+
+.carousel-item{
+	width: 100%;
+	height: 100vh;
+	opacity: .85;
+}
+
+/*.landing{
+	background-image: url(../images/bg.jpg);
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+	position: relative;
+	width: 100%;
+}*/
+
+
+
+h1{
+	font-family: 'Allerta Stencil', sans-serif;
+	font-size: 80px;
+	position: absolute;
+	top: 38%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: white;
+	font-weight: 900;
+	font-style: bold;
+	text-align: center;
+	width: 100%;
+}
+
+h2{
+	width: 40%;
+	font-family: 'Zilla Slab', serif;
+	position: absolute;
+	top: 73%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: white;
+	text-align: center;
+	font-size: 23px;
+}
+
+.navbar{
+	height: 50px;
+	color: black;
+	position: sticky;
+	padding: 0;
+}
+
+.navbar-brand{
+	color: white;
+}
+
+.edit_nav{
+	color: white;
+	background-color: #00CED1;
+	/*#05B8CC;*/
+}
+
+#navbar-nav > ul > li:hover{
+	background-color: turquoise;
+	color: black;
+}
+
+#white{
+	background-color: white;
+}
+
+/*#nav1{
+	position: sticky;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+}*/
+
+.sd_white{
+	width: 39px;
+	height: 30px;
+}
+.logo{
+	height: 300px;
+	width: 25%;
+	border: 10px solid #00C5CD;
+	margin-top: 190px;
+	margin-left: 38%;
+	border-radius: 50%;
+	display: block;
+	z-index:2;
+}
+.content{
+	height: 100vh;
+	background-color: turquoise;
+	padding: 0;
+	margin: 0;
+
+}
+
+.header2{
+	display: block;
+	z-index: 100;
+	margin-top: 40%;
+	margin-left: 45%;
+	position: absolute;
+}
+
+.header2 > a > img{
+	width: 130px;
+	height: 40px;
+}
+
+
+.landing{
+	min-height: 100vh;
+	width: 100%;
+	position: relative;
+}
+
+
+
+/*.move {
+  animation: move 1s;
+  animation-duration: 1s;
+}
+
+@keyframes move {
+	from { top: 0; left: 0; }
+  	to   { top: 38%; left: 50%; }
+}*/
+
+.header_image{
+	background-image: url(../images/header.png);
+	background-position: bottom;
+	background-size: cover;
+	/*margin-bottom: -38px;*/
+	width: 100%;
+	height: 150px;
+}
+
+.card{
+	width: 50%;
+	margin: auto;
+	margin-top: 4%;
+	margin-bottom: 4%;
+	/*margin-left: 50%;*/
+}
+
+.card-title{
+	margin-top: 0;
+}
+
+h3{
+	font-family: 'Noto Serif', serif;
+	font-size: 30px;
+	color: #00C5CD;
+	margin-top: 50px;
+}
+
+.map{
+	height: 100vh;
+	border: 1px solid black;
+	position: relative;
+	padding-left: 17%;
+	padding-top: 10%;
+}
+
+#na{
+	width: 30%;
+	height: 30%;
+	/*border: 1px solid black;*/
+	display: block;
+	position: absolute;
+
+}
+
+#sa{
+	width: 15%;
+	height: 35%;
+	/*border: 1px solid black;*/
+	margin-top: 18%;
+	margin-left: 9%;
+	display: block;	
+	position: absolute;
+}
+
+#africa{
+	width: 15%;
+	height: 30%;
+	/*border: 1px solid black;*/
+	display: block;
+	position: absolute;
+	margin-left: 25%;
+	margin-top: 12.5%;
+	z-index: 4;
+}
+
+#europe{
+	width: 15%;
+	height: 23%;/*
+	border: 1px solid black;*/
+	display: block;
+	position: absolute;
+	margin-left: 27%;
+	z-index: 5;
+}
+
+#asia{
+	width: 32%;
+	height: 39%;
+	/*border: 1px solid black;*/
+	display: block;
+	position: absolute;
+	margin-left: 33%;	
+	margin-top:1%;
+	z-index: 3;
+}
+
+#australia{
+	width: 11%;
+	height: 18.5%;
+	/*border: 1px solid black;*/
+	display: block;
+	position: absolute;
+	margin-left: 55%;
+	margin-top: 22.7%;
+
+}
+
+
+
+#na_txt, #sa_txt, #asia_txt,
+#africa_txt, #europe_txt,
+#australia_txt{
+	color: blue;
+	position: absolute;
+	font-size: 14px;
+	z-index: 10;
+	color: lightgrey;
+}
+
+#na_txt{
+	margin-top: 8%;
+	margin-left: 6%;
+}
+
+#sa_txt{
+	margin-top: 25%;
+	margin-left: 12%;
+}
+
+#asia_txt{
+	margin-top: 10%;
+	margin-left: 45%;
+}
+
+#europe_txt{
+	margin-top: 8%;
+	margin-left: 33%;
+}
+
+#africa_txt{
+	margin-top: 18%;
+	margin-left: 30%;
+}
+
+#australia_txt{
+	margin-top: 28%;
+	margin-left: 58%;
+}
+
+
+.map > a > img:hover{
+	opacity: .5;
+}
+
+
+
+
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {
+	.col-12{
+		margin: 0;
+	}
+
+	.logo{
+		height: 50px;
+		/*margin-left: 100px;*/
+	}
+
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+
+
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+
+
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+
+
+}
+
+

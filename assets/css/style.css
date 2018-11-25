@@ -6,6 +6,7 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
+	scroll-behavior: smooth;
 }
 
 .col-lg-12, 
@@ -58,9 +59,14 @@
 	color: black;
 }
 
+
+.nav-link{
+	background-color: black;
+}
+
 .sd_white{
 	width: 39px;
-	height: 30px;
+	height: 33px;
 	margin-left: 20%;
 
 }
@@ -245,22 +251,29 @@
 	/*background-color: rgba(88,88,88, 0.4);*/
 	/*border-radius: 30%;*/
 	width: 100%;
-	color: white;
 	min-height: 100%;
 	float: left;
 	/*border: 1px solid white;*/
 }
 
+.header_bio{
+	font-family: 'Montserrat Subrayada', sans-serif;	
+	font-size: 30px;
+	color: aquamarine;
+	margin-top: 10%;
+	margin-left: 80%;
+}
 .box_about{
 	text-align: justify;
 	text-indent: 30px;
 	line-height: 30px;
-	margin-top: 150px;
+	margin-top: 10%;
 	padding-left: 0px;
 	padding-right: 50px;
 	width: 100%;
 	/*border: 1px solid red;*/
 	float: left;
+	color: white;
 
 }
 
@@ -295,13 +308,12 @@
 	background-color: rgba(20,20,20, 0.8);
 }
 .recent_proj{
-	font-family: 'Kanit', sans-serif;
+	font-family: 'Montserrat Subrayada', sans-serif;
 	font-size: 30px;
-	margin:0;
-	letter-spacing: .3px;
+	margin-top: 10%;
 	/*font-weight: 900;*/
 	color: aquamarine;
-	margin-top: 10px;
+	margin-top: 5%;
 	margin-bottom: 10px;
 	/*border: 2px solid red;*/
 /*	height: 10%;*/
@@ -309,12 +321,13 @@
 
 
 #project_rows{
-	padding-top: 40px;
+	/*padding-top: 40px;*/
 	padding-left: 40px;
 	padding-bottom: 80px;
 	/*padding-right: 50px;*/
 	/*border: 1px solid white;*/
 	background-color: rgba(20,20,20, 0.8);
+	/*min-height: 100vh;*/
 }
 
 .project{
@@ -340,13 +353,30 @@
 
 }
 
+.web_link{
+	opacity: 1;
+	border-color: white;
+	width: 150px;
+	border:10px solid white;
+	border-radius: 10px;
+	margin-left: 100px;
+}
+
 /*#contact{
 	min-height: 80vh;
 	background-color: rgba(20,20,20, 0.7);
 }*/
 
+.contact_us_header{
+	font-size: 30px;
+	font-color: aquamarine;
+	font-family: 'Montserrat Subrayada', sans-serif;
+
+}
+
 #left_col{
 	/*padding: 90px 50px 50px 50px;*/
+	padding-top: 5%;
 	background-color: rgba(20,20,20, 0.8);
 	/*border: 1px solid white;*/
 	min-height: 70vh;
@@ -361,8 +391,8 @@
 
 .contact_us{
 	width: 600px;
-	height: 350px;
-	margin-left: 380px;
+	height: 400px;
+	margin-left: 28%;
 	margin-top: 30px;
 	background-color: #53e3d4;
 	padding: 20px;
@@ -370,11 +400,19 @@
 	border: 1px solid black;
 }
 
-hr{
+#submit{
+	background-color: white;
+	color: black;
+	border-radius: 10px;
+	width: 80px;	
+	height: 30px;
+}
+
+#hr{
 	background-color: turquoise;
 	width: 50%;
-	margin-left: 340px;
-	margin-top: 70px;
+	/*margin-left: 500px;
+	margin-top: 70px;*/
 }
 
 #right_col{
@@ -389,9 +427,9 @@ hr{
 
 #right_col2{
 	background-color: rgba(20,20,20, 0.8);
-	padding-top: 60px;
+	padding-top: 100px;
 	min-height: 100vh;
-	min-height: 100vh;	
+	min-height: 50vh;
 	color: white;
 }
 
@@ -410,3 +448,238 @@ hr{
 .bg-info{
 	background-color: rgba(20,20,20, 0.7);
 }
+
+.social_media{
+	margin-top: 30px;
+	margin-left: 20px;
+	/*background-color: rgba(20,20,20, 0.8);*/
+}
+
+#fb, #linkedin, #git{
+	margin: 20px;
+	width: 51px;
+	height: 51px;
+}
+
+#linkedin{
+	height: 53px;
+	width: 53px;
+}
+
+#hr{
+	
+	margin-top: 100px;
+	margin-left: 100px;
+	padding-left: 150px;
+	text-align: center;
+}
+
+#right_col{
+	margin: 0;
+	height: 50vh;
+}
+
+#right_col2{
+	padding: 20px;
+	text-align: center;
+	margin-top: 0;
+}
+
+
+
+
+/*mobile*/
+@media only screen and (max-width: 400px) {
+	/*.col-12{
+		margin: 0;
+	}*/
+
+	.s_logo{
+		width: 70px;
+		height: 70px;
+		margin-left:2px;
+		margin-top: 100px;
+	}
+
+	.d_logo{
+		width: 70px;
+		height: 70px;
+		margin-left: 70px;
+		margin-top: -70px;
+	}
+
+	.box{
+		margin-left: 15px;	
+	}
+
+	.contact_us{
+		width: 300px;
+		height: 400px;
+		margin: 0;
+		margin-left: 35px;
+	}
+
+	#hr{
+		margin-left: 20px;
+	}
+	
+	.box_portfolio{
+		text-align: center;
+		margin-left: 2px;	
+		font-size: 15px;
+		width: 100%;
+	}
+
+	.right_about_me{
+		margin: 10px;
+		margin-top: 5px;
+	}
+
+	.pic{
+		width: 130px;
+		height: 130px;
+	}
+
+	.header_bio{
+		font-size: 20px;
+		margin-left: 100px;	
+		
+	}
+
+	#about{
+		width: 100%;	
+	}
+
+	.box_about{
+		margin: 0;
+		font-size: 11px;
+		line-height: 20px;
+		padding-left: 5px;
+		padding-right: 30px;
+	}
+
+	.logo2_box{
+		margin:0;
+		padding: 0;
+	}
+
+	.project{
+		margin-top: 30px;
+	}
+
+	.social_media{
+		margin:0;
+	}
+
+	.navbar-brand{
+		height: 40px;
+		width: 60px;
+	}
+}
+
+/*tablet*/
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+
+	.s_logo{
+		width: 100px;
+		height: 100px;
+	}
+
+	.d_logo{
+		width: 100px;
+		height: 100px;
+	}
+
+	.box{
+		margin-left: 30px;
+	}
+
+	.box_portfolio{
+		margin-left: 18px;
+	}
+
+	.header_bio{
+		margin:0;
+		margin-left: 270px;
+		/*margin-top: 20px;*/
+	}
+
+	.right_about_me{
+		font-size: 20px;
+		/*padding: 30px;
+		height: 500px;*/
+	}
+
+	.left_about_me{
+		padding: 100px;
+	}
+
+	.right_about_me{
+		margin-top: -90px;
+		padding-left: 55px;
+	}
+
+	.project{
+		width: 400px;	
+		height: 500px;
+		margin-left: 150px;
+		margin-top: 50px;
+	}
+
+	.web_link{
+		margin-left: 120px;
+	}
+
+	.contact_us{
+		margin-left: 100px;
+		margin-top: 100px;
+	}
+
+	#hr{
+		margin-left: 130px;
+	}
+
+	.right_about_me{
+		margin-top: -50px
+	}
+
+	#right_col{
+		/*margin-top: -50px;	*/
+	}
+
+	#right_col2 > p {
+		margin-top: -150px;
+		line-height: 30px;
+		text-align: center;
+	}
+
+	#left_col{
+		height: 700px;
+	}
+
+	.social_media{
+		margin-top: 300px;
+	}
+
+	.navbar-brand{
+		height: 50px;
+		width: 70px;
+	}
+
+
+
+}
+
+/*// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+
+
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+
+
+}*/
+
+
